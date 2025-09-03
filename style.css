@@ -1,0 +1,141 @@
+/* Reset default margin and padding */
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* Header styles */
+header {
+    background-color: #00b7ff;
+    color: #000000;
+    padding: 10px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Navigation styles */
+nav {
+    background-color: #2f00ff;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+nav a.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Container styles */
+.container {
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Headings & paragraphs */
+.container h2 {
+    margin-bottom: 10px;
+}
+
+.container p {
+    margin-bottom: 20px;
+}
+
+/* Lists */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+/* Forms */
+form {
+    margin-bottom: 20px;
+}
+
+/* Images */
+img {
+    width: 100%;
+    height: auto;
+}
+
+img#hydration {
+    max-height: 700px;
+}
+
+/* Products grid */
+div.products {
+    float: left;
+    width: 33.3%;
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
+}
+
+.product-list:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout */
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 95%;
+    }
+    div.products {
+        width: 100%;
+    }
+}
+
+/* Video container */
+.video-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Dark Mode */
+.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.dark-mode header {
+    background-color: #222;
+    color: #ffffff;
+}
+
+.dark-mode nav {
+    background-color: #4444ff;
+}
+
+.dark-mode footer {
+    background-color: #222;
+}
